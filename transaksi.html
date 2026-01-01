@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Transaksi</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h2>Transaksi Peminjaman</h2>
+</header>
+
+<div class="container">
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="profil.html">Profil</a>
+</nav>
+
+<main>
+<div class="card">
+    <h3>Tambah Transaksi</h3>
+    <form onsubmit="return tambahTransaksi()">
+        <input id="buku" placeholder="Judul Buku">
+        <input id="peminjam" placeholder="Nama Peminjam">
+        <button>Tambah</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr><th>Buku</th><th>Peminjam</th><th>Aksi</th></tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+</div>
+</main>
+</div>
+
+</body>
+</html>
